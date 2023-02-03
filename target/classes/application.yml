@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /news
+spring:
+  datasource:
+    url: jdbc:mysql://82.180.152.172:3306/u193635677_abs_news
+    username: u193635677_abs_news_user
+    password: Abs_news@123
+  jpa:
+    show-sql: false
+    properties:
+      hibernate:
+        proc:
+          param_null_passing: true
+    hibernate:
+      ddl-auto: create
+app:
+  client-salt: sampleText
